@@ -1,0 +1,3 @@
+- name: Print a role Variable
+  ansible.builtin.debug:
+    msg: Role Variable - {{ URL }}
