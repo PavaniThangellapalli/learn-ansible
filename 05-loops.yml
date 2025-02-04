@@ -1,0 +1,11 @@
+- name: Loops
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Print fruits
+      ansible.builtin.debug:
+        msg: Fruit name - {{ item }}
+      loop:
+        - Apple
+        - Banana
+        - Orange
