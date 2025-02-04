@@ -3,7 +3,6 @@
   connection: local
   vars:
     URL: play.google.com
-    New-URL: new.google.com
   vars_files:
     - just-vars.yml
   tasks:
@@ -11,7 +10,7 @@
       vars:
         URL: task.google.com
       ansible.builtin.debug:
-        msg: Var URL - {{ URL }}, New URL - {{ New-URL }}
+        msg: Var URL - {{ URL }}
     - name: Print play level variable
       ansible.builtin.debug:
         msg: "{{ URL }}"
