@@ -14,8 +14,7 @@
     - name: Print play level variable
       ansible.builtin.debug:
         msg: "{{ URL }}"
-
-- name: Print a Variable
-  ansible.builtin.debug:
-   msg: "{{ URL }}"
+    - name: Print a Variable
+      ansible.builtin.debug:
+      msg: "{{ URL }}"
 
