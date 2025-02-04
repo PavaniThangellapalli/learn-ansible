@@ -1,6 +1,8 @@
 - name: Variables
   hosts: localhost
   connection: local
+  roles:
+    - sample
   vars:
     URL: play.google.com
   vars_files:
@@ -17,5 +19,4 @@
     - name: Print a Variable
       ansible.builtin.debug:
        msg: "{{ URL }}"
-  roles:
-    - sample
+
