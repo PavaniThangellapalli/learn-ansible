@@ -1,0 +1,14 @@
+- name: Filters
+  hosts: localhost
+  connection: local
+  vars:
+    URL: https://github.com/PavaniThangellapalli/learn-ansible/blob/main/01-sample.yml
+  tasks:
+    - name: Print
+      ansible.builtin.debug:
+        msg: "{{ URL | split ('/') }}"
+
+    - name: Print Last word of URL
+      ansible.builtin.debug:
+        msg: "{{ URL | split ('/') | last }}"
+
