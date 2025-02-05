@@ -1,0 +1,8 @@
+- name: Error handling
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: Print
+    ansible.builtin.shell: cat /etc/passwd | grep demo
+  - name: Print
+    ansible.builtin.shell: ls
