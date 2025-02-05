@@ -3,6 +3,7 @@
   connection: local
   roles:
     - sample
+
   vars:
     URL: play.google.com
   vars_files:
