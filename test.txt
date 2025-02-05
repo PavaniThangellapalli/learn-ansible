@@ -1,2 +1,2 @@
 Hello {{ name }}
-Welcome to Templates
+Welcome to Templates in Ansible
