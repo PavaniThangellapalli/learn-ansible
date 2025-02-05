@@ -19,4 +19,11 @@
     - name: Print a Variable
       ansible.builtin.debug:
        msg: "{{ URL }}"
+    - name: Task Output
+      ansible.builtin.shell: ls
+      register: out
+    - name: Print out value
+      ansible.builtin.debug:
+        msg: "{{ out }}"
+
 
