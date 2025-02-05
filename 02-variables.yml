@@ -25,5 +25,7 @@
     - name: Print out value
       ansible.builtin.debug:
         msg: "{{ out }}"
-
+    - name: Print Fact
+      ansible.builtin.debug:
+        msg: "{{ ansible_architecture }}"
 
